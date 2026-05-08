@@ -6,8 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlantMe</title>
   </head>
-  <body>
-    <div class="text-3xl text-red-300 underline">Test</div>
+  <body class="font-outfit bg-[#F9F9F9]">
+    <header class="flex bg-white px-16 py-4">
+      <nav class="flex items-center">
+        <img class="mr-19.25" src="./src/assets/logo.svg" alt="PlantMe logo" />
+        <ul class="flex items-center text-[18px] leading-4.5">
+          <li class="border-r pr-4">
+            <a href="#">About Us</a>
+          </li>
+          <li class="border-r px-4">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="border-r px-4">
+            <a href="#">Blog</a>
+          </li>
+          <li class="border-r px-4">
+            <a href="#">Site Map</a>
+          </li>
+          <li class="pl-4">
+            <div tabindex="0" class="flex items-center">
+              <span class="mr-1">Eng</span>
+              <img src="./src/assets/arrow-down.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="border-main ml-auto flex h-12 max-w-106 flex-1 items-center justify-between rounded-xs border-2"
+      >
+        <input
+          id="search"
+          name="search"
+          class="placeholder:text-main/70 mx-4 h-6.5 flex-1 placeholder:text-[18px]"
+          type="text"
+          placeholder="Search this site"
+        />
+        <button
+          class="bg-main flex w-12 items-center justify-center self-stretch"
+        >
+          <img class="h-4.75 w-4.75" src="./src/assets/search.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+      <section class="flex items-center gap-4.5 px-16 pt-6 pb-15">
+        <div class="flex-1">
+          <h1 class="text-main mb-9 text-5xl leading-[1.2] font-bold">
+            Lorem ipsum dolor sit amet
+          </h1>
+          <h2 class="text-main mb-3 text-2xl leading-[1.2] font-medium">
+            Lorem ipsum dolor sit amet
+          </h2>
+          <p class="text-main mb-9 w-[50ch] text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            magnam voluptatem aperiam aut amet tempore, incidunt optio nulla
+            maiores in earum possimus, obcaecati accusamus debitis ut hic
+            pariatur eius sunt, expedita dolor illo dolorem culpa repellat
+            excepturi! Voluptatum cumque officia possimus natus at. Similique,
+            adipisci possimus sint voluptatem facilis mollitia!
+          </p>
+          <button
+            class="bg-main rounded-xs px-16.25 py-2.75 text-[18px] text-white"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="h-162 w-162 overflow-hidden rounded-xs">
+          <img
+            class="h-full w-full object-cover"
+            src="/plant.jpg"
+            alt="Leaves with raindrops"
+          />
+        </div>
+      </section>
+
+      <!-- ABOUT US SECTION -->
+      <section class="flex gap-4.5 bg-white px-16 py-20">
+        <article class="bg-main flex rounded-xs p-6 text-white">
+          <div class="flex gap-4.5">
+            <div class="h-57.5 min-w-45">
+              <img
+                class="h-full w-full object-cover"
+                src="/leaves.jpg"
+                alt="Forest leaves"
+              />
+            </div>
+
+            <div>
+              <h3 class="mb-3 text-[18px] font-bold">About Us</h3>
+              <p class="mb-5.75 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos unde consectetur, sapiente laboriosam commodi in
+                nostrum iure maiores quo minima. Consequuntur, aliquid iste illo
+                nostrum officiis neque architecto placeat nisi quia, maxime unde
+                temporibus, a minus repellendus? Corporis minima quo fuga
+                dolorem, nesciunt quibusdam, error odio magnam rem quae natus.
+              </p>
+              <a class="text-sm font-bold underline" href="#">
+                Learn more about &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-main flex rounded-xs p-6 text-white">
+          <div class="flex gap-4.5">
+            <div class="h-57.5 min-w-45">
+              <img
+                class="h-full w-full object-cover"
+                src="/leaves.jpg"
+                alt="Forest leaves"
+              />
+            </div>
+
+            <div>
+              <h3 class="mb-3 text-[18px] font-bold">About Us 2</h3>
+              <p class="mb-5.75 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos unde consectetur, sapiente laboriosam commodi in
+                nostrum iure maiores quo minima. Consequuntur, aliquid iste illo
+                nostrum officiis neque architecto placeat nisi quia, maxime unde
+                temporibus, a minus repellendus? Corporis minima quo fuga
+                dolorem, nesciunt quibusdam, error odio magnam rem quae natus.
+              </p>
+              <a class="text-sm font-bold underline" href="#">
+                Learn more about &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
