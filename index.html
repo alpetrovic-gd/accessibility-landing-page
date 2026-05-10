@@ -7,6 +7,11 @@
     <title>PlantMe</title>
   </head>
   <body class="font-outfit bg-[#F9F9F9]">
+    <a
+      href="#main-content"
+      class="text-primary sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-white focus:p-4"
+      >Skip to main content</a
+    >
     <header class="flex bg-white px-16 py-4">
       <nav class="flex items-center">
         <img class="mr-19.25" src="./src/assets/logo.svg" alt="PlantMe logo" />
@@ -76,11 +81,13 @@
         <input
           id="search"
           name="search"
+          aria-label="Search this site"
           class="placeholder:text-primary/70 mx-4 h-6.5 flex-1 placeholder:text-[18px]"
           type="text"
           placeholder="Search this site"
         />
         <button
+          aria-label="Search"
           class="bg-primary flex w-12 cursor-pointer items-center justify-center self-stretch"
         >
           <img class="h-4.75 w-4.75" src="./src/assets/search.svg" alt="" />
@@ -89,7 +96,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <main>
+    <main id="main-content">
       <section class="flex items-center gap-4.5 px-16 pt-6 pb-15">
         <div class="flex-1">
           <h1 class="text-primary mb-9 text-5xl leading-[1.2] font-bold">
@@ -225,15 +232,27 @@
               </div>
             </div>
             <div class="flex gap-9">
-              <div class="flex h-8 w-8 items-center justify-center">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-stone-100"
+              >
                 <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
-              </div>
-              <div class="flex h-8 w-8 items-center justify-center">
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-stone-100"
+              >
                 <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
-              </div>
-              <div class="flex h-8 w-8 items-center justify-center">
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-stone-100"
+              >
                 <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -360,10 +379,11 @@
             </div>
 
             <!-- RADIO BUTTONS -->
-            <div class="custom-radio-group flex justify-between">
+            <fieldset class="custom-radio-group flex justify-between">
+              <legend class="sr-only">Profession</legend>
               <div>
                 <input
-                  class="custom-radio-hidden hidden"
+                  class="custom-radio-hidden sr-only"
                   type="radio"
                   id="ui-developer"
                   name="profession"
@@ -385,7 +405,7 @@
               </div>
               <div>
                 <input
-                  class="custom-radio-hidden hidden"
+                  class="custom-radio-hidden sr-only"
                   type="radio"
                   id="ui-ux-designer"
                   name="profession"
@@ -407,7 +427,7 @@
               </div>
               <div>
                 <input
-                  class="custom-radio-hidden hidden"
+                  class="custom-radio-hidden sr-only"
                   type="radio"
                   id="accessibility-expert"
                   name="profession"
@@ -429,7 +449,7 @@
               </div>
               <div>
                 <input
-                  class="custom-radio-hidden hidden"
+                  class="custom-radio-hidden sr-only"
                   type="radio"
                   id="qa-engineer"
                   name="profession"
@@ -451,7 +471,7 @@
               </div>
               <div>
                 <input
-                  class="custom-radio-hidden hidden"
+                  class="custom-radio-hidden sr-only"
                   type="radio"
                   id="other"
                   name="profession"
@@ -471,7 +491,7 @@
                   Other
                 </label>
               </div>
-            </div>
+            </fieldset>
 
             <!-- TEXTAREA -->
             <div>
@@ -491,7 +511,7 @@
               <div class="custom-checkbox-container">
                 <input
                   type="checkbox"
-                  class="hidden"
+                  class="sr-only"
                   id="accept-the-terms"
                   name="accept-the-terms"
                   value="Accept the Terms"
@@ -511,7 +531,7 @@
               <div class="custom-checkbox-container">
                 <input
                   type="checkbox"
-                  class="hidden"
+                  class="sr-only"
                   id="accept-the-terms2"
                   name="accept-the-terms2"
                   value="Accept the Terms 2"
@@ -554,6 +574,7 @@
           </p>
           <div class="flex gap-7.5">
             <input
+              aria-label="Email address"
               class="flex-1 border-b border-b-black placeholder:text-lg placeholder:leading-[1.45] placeholder:text-black/50"
               type="email"
               placeholder="example@gmail.com"
@@ -567,12 +588,14 @@
         </div>
         <!-- LINKS -->
         <div>
-          <ul class="flex flex-col gap-4">
-            <li><a class="text-lg" href="#">About Us</a></li>
-            <li><a class="text-lg" href="#">Contact Us</a></li>
-            <li><a class="text-lg" href="#">Blog</a></li>
-            <li><a class="text-lg" href="#">Site Map</a></li>
-          </ul>
+          <nav aria-label="Footer navigation">
+            <ul class="flex flex-col gap-4">
+              <li><a class="text-lg" href="#">About Us</a></li>
+              <li><a class="text-lg" href="#">Contact Us</a></li>
+              <li><a class="text-lg" href="#">Blog</a></li>
+              <li><a class="text-lg" href="#">Site Map</a></li>
+            </ul>
+          </nav>
         </div>
         <!-- CONTACT AND PAYMENT METHODS -->
         <div class="leading-[1.45]">
