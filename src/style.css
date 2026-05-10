@@ -3,5 +3,6 @@
 
 @theme {
   --font-outfit: "Outfit", sans-serif;
-  --color-main: #3a6150;
+  --color-primary: #3a6150;
+  --color-secondary: #71837b;
 }

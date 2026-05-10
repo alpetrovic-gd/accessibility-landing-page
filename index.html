@@ -25,25 +25,63 @@
           </li>
           <li class="pl-4">
             <div tabindex="0" class="flex items-center">
-              <span class="mr-1">Eng</span>
-              <img src="./src/assets/arrow-down.svg" alt="" />
+              <div class="custom-select-container relative">
+                <input
+                  type="hidden"
+                  name="country-number"
+                  class="custom-select-hidden"
+                  value="Eng"
+                />
+                <button
+                  type="button"
+                  class="custom-select-trigger flex cursor-pointer items-center justify-between gap-2"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <span class="custom-select-value">Eng</span>
+                  <img
+                    src="./src/assets/arrow-down.svg"
+                    alt=""
+                    class="custom-select-chevron transition-transform duration-200"
+                  />
+                </button>
+                <ul
+                  class="custom-select-options absolute top-full left-0 z-10 mt-1 hidden max-h-60 min-w-full rounded-[3px] border border-stone-300 bg-stone-100 shadow-lg"
+                  role="listbox"
+                >
+                  <li
+                    class="hover:bg-primary cursor-pointer p-3 text-sm hover:text-white"
+                    role="option"
+                    data-value="Eng"
+                  >
+                    Eng
+                  </li>
+                  <li
+                    class="hover:bg-primary cursor-pointer p-3 text-sm hover:text-white"
+                    role="option"
+                    data-value="Esp"
+                  >
+                    Esp
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
       </nav>
 
       <div
-        class="border-main ml-auto flex h-12 max-w-106 flex-1 items-center justify-between rounded-xs border-2"
+        class="border-primary ml-auto flex h-12 max-w-106 flex-1 items-center justify-between rounded-xs border-2"
       >
         <input
           id="search"
           name="search"
-          class="placeholder:text-main/70 mx-4 h-6.5 flex-1 placeholder:text-[18px]"
+          class="placeholder:text-primary/70 mx-4 h-6.5 flex-1 placeholder:text-[18px]"
           type="text"
           placeholder="Search this site"
         />
         <button
-          class="bg-main flex w-12 items-center justify-center self-stretch"
+          class="bg-primary flex w-12 cursor-pointer items-center justify-center self-stretch"
         >
           <img class="h-4.75 w-4.75" src="./src/assets/search.svg" alt="" />
         </button>
@@ -54,13 +92,13 @@
     <main>
       <section class="flex items-center gap-4.5 px-16 pt-6 pb-15">
         <div class="flex-1">
-          <h1 class="text-main mb-9 text-5xl leading-[1.2] font-bold">
+          <h1 class="text-primary mb-9 text-5xl leading-[1.2] font-bold">
             Lorem ipsum dolor sit amet
           </h1>
-          <h2 class="text-main mb-3 text-2xl leading-[1.2] font-medium">
+          <h2 class="text-primary mb-3 text-2xl leading-[1.2] font-medium">
             Lorem ipsum dolor sit amet
           </h2>
-          <p class="text-main mb-9 w-[50ch] text-sm">
+          <p class="text-primary mb-9 w-[50ch] text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             magnam voluptatem aperiam aut amet tempore, incidunt optio nulla
             maiores in earum possimus, obcaecati accusamus debitis ut hic
@@ -69,7 +107,7 @@
             adipisci possimus sint voluptatem facilis mollitia!
           </p>
           <button
-            class="bg-main rounded-xs px-16.25 py-2.75 text-[18px] text-white"
+            class="bg-primary cursor-pointer rounded-xs px-16.25 py-2.75 text-[18px] text-white"
           >
             Buy Now
           </button>
@@ -85,7 +123,7 @@
 
       <!-- ABOUT US SECTION -->
       <section class="flex gap-4.5 bg-white px-16 py-20">
-        <article class="bg-main flex rounded-xs p-6 text-white">
+        <article class="bg-primary flex rounded-xs p-6 text-white">
           <div class="flex gap-4.5">
             <div class="h-57.5 min-w-45">
               <img
@@ -112,7 +150,7 @@
           </div>
         </article>
 
-        <article class="bg-main flex rounded-xs p-6 text-white">
+        <article class="bg-primary flex rounded-xs p-6 text-white">
           <div class="flex gap-4.5">
             <div class="h-57.5 min-w-45">
               <img
@@ -138,6 +176,370 @@
             </div>
           </div>
         </article>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="bg-secondary px-16 pt-20 pb-30">
+        <div class="flex rounded-xl bg-white">
+          <!-- HERO PART -->
+          <div
+            class="flex w-106.25 flex-col justify-between rounded-xl bg-[url(/plant-white.jpg)] bg-cover bg-right p-10.5 pb-12"
+          >
+            <div>
+              <h2 class="mb-4 text-5xl leading-[1.2] font-bold">Contact Us</h2>
+              <p class="mb-14 text-sm">
+                Fill up the form and ur Team will get back to you within 24
+                hours. Happy to see your message!
+              </p>
+              <div class="text-sm">
+                <div class="flex gap-6">
+                  <div class="flex h-6 w-6 items-center justify-center">
+                    <img
+                      class="h-5.25 w-5.25"
+                      src="./src/assets/social.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>+380 93 15 32 456</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex h-6 w-6 items-center justify-center">
+                    <img
+                      class="h-5.25 w-5.25"
+                      src="./src/assets/social.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>example@gmail.com</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex h-6 w-6 items-center justify-center">
+                    <img
+                      class="h-5.25 w-5.25"
+                      src="./src/assets/social.svg"
+                      alt=""
+                    />
+                  </div>
+                  <address class="not-italic">Pidmurma 5a, Lviv</address>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-9">
+              <div class="flex h-8 w-8 items-center justify-center">
+                <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
+              </div>
+              <div class="flex h-8 w-8 items-center justify-center">
+                <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
+              </div>
+              <div class="flex h-8 w-8 items-center justify-center">
+                <img class="h-7 w-7" src="./src/assets/social.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM PART -->
+          <form class="ml-4.25 flex flex-1 flex-col gap-6.5 py-12 pr-5">
+            <!-- INPUT FIELDS -->
+            <div class="flex gap-4.5">
+              <div class="flex flex-1 flex-col">
+                <label
+                  class="mb-2 w-max cursor-pointer text-sm leading-5"
+                  for="first-name"
+                >
+                  <span class="text-red-500">*</span> First Name
+                </label>
+                <input
+                  class="focus:outline-primary rounded-[3px] border border-black p-3 placeholder:text-sm placeholder:leading-5 placeholder:text-black/50"
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  placeholder="John"
+                />
+              </div>
+              <div class="flex flex-1 flex-col">
+                <label
+                  class="mb-2 w-max cursor-pointer text-sm leading-5"
+                  for="last-name"
+                >
+                  <span class="text-red-500">*</span> Last Name
+                </label>
+                <input
+                  class="focus:outline-primary rounded-[3px] border border-black p-3 placeholder:text-sm placeholder:leading-5 placeholder:text-black/50"
+                  id="last-name"
+                  name="last-name"
+                  type="text"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+            <div class="flex gap-4.5">
+              <div class="flex flex-1 flex-col">
+                <label
+                  class="mb-2 w-max cursor-pointer text-sm leading-5"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  class="focus:outline-primary rounded-[3px] border border-black p-3 placeholder:text-sm placeholder:leading-5 placeholder:text-black/50"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="flex flex-1 flex-col">
+                <label
+                  class="mb-2 w-max cursor-pointer text-sm leading-5"
+                  for="phone-number"
+                >
+                  Phone Number
+                </label>
+
+                <div class="flex rounded-[3px] border border-black">
+                  <div class="custom-select-container relative">
+                    <input
+                      type="hidden"
+                      name="country-number"
+                      class="custom-select-hidden"
+                      value="+380"
+                    />
+                    <button
+                      type="button"
+                      class="custom-select-trigger focus:outline-primary flex h-full cursor-pointer items-center justify-between gap-2 rounded-[3px] bg-white p-3 text-sm leading-5"
+                      aria-haspopup="listbox"
+                      aria-expanded="false"
+                    >
+                      <span class="custom-select-value">+380</span>
+                      <img
+                        src="./src/assets/arrow-down.svg"
+                        alt=""
+                        class="custom-select-chevron h-4 w-4 transition-transform duration-200"
+                      />
+                    </button>
+                    <ul
+                      class="custom-select-options absolute top-full left-0 z-10 mt-1 hidden max-h-60 min-w-full rounded-[3px] border border-stone-300 bg-stone-100 shadow-lg"
+                      role="listbox"
+                    >
+                      <li
+                        class="hover:bg-primary cursor-pointer p-3 text-sm hover:text-white"
+                        role="option"
+                        data-value="+380"
+                      >
+                        +380
+                      </li>
+                      <li
+                        class="hover:bg-primary cursor-pointer p-3 text-sm hover:text-white"
+                        role="option"
+                        data-value="+1"
+                      >
+                        +1
+                      </li>
+                      <li
+                        class="hover:bg-primary cursor-pointer p-3 text-sm hover:text-white"
+                        role="option"
+                        data-value="+44"
+                      >
+                        +44
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="self-center text-[19px] leading-5 text-black/50">
+                    |
+                  </span>
+                  <input
+                    class="focus:outline-primary flex-1 [appearance:textfield] p-3 placeholder:text-sm placeholder:leading-5 placeholder:text-black/50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                    id="phone-number"
+                    name="phone-number"
+                    type="number"
+                    placeholder="00 000 00 00"
+                    maxlength="9"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- RADIO BUTTONS -->
+            <div class="custom-radio-group flex justify-between">
+              <div>
+                <input
+                  class="custom-radio-hidden hidden"
+                  type="radio"
+                  id="ui-developer"
+                  name="profession"
+                  value="UI Developer"
+                />
+                <label
+                  class="custom-radio-label flex cursor-pointer items-center gap-2.5"
+                  for="ui-developer"
+                >
+                  <div
+                    class="custom-radio-button border-primary flex h-5 w-5 items-center justify-center rounded-full border-2"
+                  >
+                    <div
+                      class="bg-primary hidden h-2.5 w-2.5 rounded-full"
+                    ></div>
+                  </div>
+                  UI Developer
+                </label>
+              </div>
+              <div>
+                <input
+                  class="custom-radio-hidden hidden"
+                  type="radio"
+                  id="ui-ux-designer"
+                  name="profession"
+                  value="UI/UX Designer"
+                />
+                <label
+                  class="custom-radio-label flex cursor-pointer items-center gap-2.5"
+                  for="ui-ux-designer"
+                >
+                  <div
+                    class="custom-radio-button border-primary flex h-5 w-5 items-center justify-center rounded-full border-2"
+                  >
+                    <div
+                      class="bg-primary hidden h-2.5 w-2.5 rounded-full"
+                    ></div>
+                  </div>
+                  UI/UX Designer
+                </label>
+              </div>
+              <div>
+                <input
+                  class="custom-radio-hidden hidden"
+                  type="radio"
+                  id="accessibility-expert"
+                  name="profession"
+                  value="Accessibility Expert"
+                />
+                <label
+                  class="custom-radio-label flex cursor-pointer items-center gap-2.5"
+                  for="accessibility-expert"
+                >
+                  <div
+                    class="custom-radio-button border-primary flex h-5 w-5 items-center justify-center rounded-full border-2"
+                  >
+                    <div
+                      class="bg-primary hidden h-2.5 w-2.5 rounded-full"
+                    ></div>
+                  </div>
+                  Accessibility Expert
+                </label>
+              </div>
+              <div>
+                <input
+                  class="custom-radio-hidden hidden"
+                  type="radio"
+                  id="qa-engineer"
+                  name="profession"
+                  value="QA Engineer"
+                />
+                <label
+                  class="custom-radio-label flex cursor-pointer items-center gap-2.5"
+                  for="qa-engineer"
+                >
+                  <div
+                    class="custom-radio-button border-primary flex h-5 w-5 items-center justify-center rounded-full border-2"
+                  >
+                    <div
+                      class="bg-primary hidden h-2.5 w-2.5 rounded-full"
+                    ></div>
+                  </div>
+                  QA Engineer
+                </label>
+              </div>
+              <div>
+                <input
+                  class="custom-radio-hidden hidden"
+                  type="radio"
+                  id="other"
+                  name="profession"
+                  value="Other"
+                />
+                <label
+                  class="custom-radio-label flex cursor-pointer items-center gap-2.5"
+                  for="other"
+                >
+                  <div
+                    class="custom-radio-button border-primary flex h-5 w-5 items-center justify-center rounded-full border-2"
+                  >
+                    <div
+                      class="bg-primary hidden h-2.5 w-2.5 rounded-full"
+                    ></div>
+                  </div>
+                  Other
+                </label>
+              </div>
+            </div>
+
+            <!-- TEXTAREA -->
+            <div>
+              <label class="mb-2 block text-sm leading-5" for="message"
+                >Message</label
+              >
+              <textarea
+                class="placeholder:color-black/50 focus:outline-primary min-h-26 w-full resize-none rounded-[3px] border border-black py-3 pr-3 pl-2 placeholder:text-sm placeholder:leading-5"
+                id="message"
+                name="message"
+                placeholder="Text here..."
+              ></textarea>
+            </div>
+
+            <!-- CHECKBOXES -->
+            <div class="flex gap-12">
+              <div class="custom-checkbox-container">
+                <input
+                  type="checkbox"
+                  class="hidden"
+                  id="accept-the-terms"
+                  name="accept-the-terms"
+                  value="Accept the Terms"
+                />
+                <label
+                  class="flex cursor-pointer items-center gap-5"
+                  for="accept-the-terms"
+                >
+                  <div
+                    class="flex h-4.5 w-4.5 items-center justify-center rounded-sm border-2 border-[#8392A6]"
+                  >
+                    <img src="./src/assets/checkmark.svg" alt="" />
+                  </div>
+                  <span>Accept the Terms</span>
+                </label>
+              </div>
+              <div class="custom-checkbox-container">
+                <input
+                  type="checkbox"
+                  class="hidden"
+                  id="accept-the-terms2"
+                  name="accept-the-terms2"
+                  value="Accept the Terms 2"
+                />
+                <label
+                  class="flex cursor-pointer items-center gap-5"
+                  for="accept-the-terms2"
+                >
+                  <div
+                    class="flex h-4.5 w-4.5 items-center justify-center rounded-sm border-2 border-[#8392A6]"
+                  >
+                    <img src="./src/assets/checkmark.svg" alt="" />
+                  </div>
+                  <span>Accept the Terms 2</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div>
+              <button
+                class="bg-primary ml-auto block cursor-pointer rounded-sm px-10 py-3 text-lg text-white"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>
