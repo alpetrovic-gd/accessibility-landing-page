@@ -542,7 +542,69 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="bg-white">
+      <!-- MAIN FOOTER SECTION -->
+      <div class="flex justify-between border border-[#E9E9E9] px-16 py-6">
+        <!-- SUBSCRIBE -->
+        <div>
+          <h2 class="mb-5 text-5xl leading-none font-bold">PlantMe</h2>
+          <p class="mb-8 text-lg leading-[1.45]">
+            Subscribe and be the first to know about our news and promotions.
+          </p>
+          <div class="flex gap-7.5">
+            <input
+              class="flex-1 border-b border-b-black placeholder:text-lg placeholder:leading-[1.45] placeholder:text-black/50"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+            <button
+              class="bg-primary px-15 py-4 text-lg leading-none text-white"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <!-- LINKS -->
+        <div>
+          <ul class="flex flex-col gap-4">
+            <li><a class="text-lg" href="#">About Us</a></li>
+            <li><a class="text-lg" href="#">Contact Us</a></li>
+            <li><a class="text-lg" href="#">Blog</a></li>
+            <li><a class="text-lg" href="#">Site Map</a></li>
+          </ul>
+        </div>
+        <!-- CONTACT AND PAYMENT METHODS -->
+        <div class="leading-[1.45]">
+          <div class="mb-10 flex flex-col gap-2">
+            <a class="text-lg" href="#">Contacts</a>
+            <p class="text-lg text-black/60">+380 63 072 0121</p>
+            <p class="text-lg tracking-[-2%] text-black/60 underline">
+              plantme.store@gmail.com
+            </p>
+          </div>
+          <div class="flex items-center gap-9">
+            <img src="./src/assets/visa.svg" alt="Visa logo" />
+            <img src="./src/assets/mastercard.svg" alt="Mastercard logo" />
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT FOOTER SECTION -->
+      <div class="flex items-center px-16 py-6">
+        <div class="flex-1"></div>
+        <span class="text-sm leading-[1.45]">
+          © 2022 PlantMe. All Rights Reserved
+        </span>
+        <ul
+          class="flex flex-1 justify-end gap-3.75 text-sm leading-[1.45] text-black/50"
+        >
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Language</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
