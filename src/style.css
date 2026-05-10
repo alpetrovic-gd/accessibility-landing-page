@@ -6,3 +6,16 @@
   --color-primary: #3a6150;
   --color-secondary: #71837b;
 }
+
+@layer utilities {
+  .bg-hero-plant {
+    background-image: -webkit-image-set(
+      url("/plant-white.avif") type("image/avif"),
+      url("/plant-white.jpg") type("image/jpeg")
+    );
+    background-image: image-set(
+      url("/plant-white.avif") type("image/avif"),
+      url("/plant-white.jpg") type("image/jpeg")
+    );
+  }
+}

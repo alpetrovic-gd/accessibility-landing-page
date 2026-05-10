@@ -120,11 +120,15 @@
           </button>
         </div>
         <div class="h-162 w-162 overflow-hidden rounded-xs">
-          <img
-            class="h-full w-full object-cover"
-            src="/plant.jpg"
-            alt="Leaves with raindrops"
-          />
+          <picture>
+            <source srcset="/plant.avif" type="image/avif" />
+            <img
+              class="h-full w-full object-cover"
+              src="/plant.jpg"
+              alt="Leaves with raindrops"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
 
@@ -133,11 +137,15 @@
         <article class="bg-primary flex rounded-xs p-6 text-white">
           <div class="flex gap-4.5">
             <div class="h-57.5 min-w-45">
-              <img
-                class="h-full w-full object-cover"
-                src="/leaves.jpg"
-                alt="Forest leaves"
-              />
+              <picture>
+                <source srcset="/leaves.avif" type="image/avif" />
+                <img
+                  class="h-full w-full object-cover"
+                  src="/leaves.jpg"
+                  alt="Forest leaves"
+                  loading="lazy"
+                />
+              </picture>
             </div>
 
             <div>
@@ -160,11 +168,15 @@
         <article class="bg-primary flex rounded-xs p-6 text-white">
           <div class="flex gap-4.5">
             <div class="h-57.5 min-w-45">
-              <img
-                class="h-full w-full object-cover"
-                src="/leaves.jpg"
-                alt="Forest leaves"
-              />
+              <picture>
+                <source srcset="/leaves.avif" type="image/avif" />
+                <img
+                  class="h-full w-full object-cover"
+                  src="/leaves.jpg"
+                  alt="Forest leaves"
+                  loading="lazy"
+                />
+              </picture>
             </div>
 
             <div>
@@ -190,7 +202,7 @@
         <div class="flex rounded-xl bg-white">
           <!-- HERO PART -->
           <div
-            class="flex w-106.25 flex-col justify-between rounded-xl bg-[url(/plant-white.jpg)] bg-cover bg-right p-10.5 pb-12"
+            class="bg-hero-plant flex w-106.25 flex-col justify-between rounded-xl bg-cover bg-right p-10.5 pb-12"
           >
             <div>
               <h2 class="mb-4 text-5xl leading-[1.2] font-bold">Contact Us</h2>
